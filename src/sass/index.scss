@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    font-family: 'Baloo Chettan 2', sans-serif;
+}
+
+.main-section {
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+
+    h2 {
+        background-image: linear-gradient(to right bottom, darkblue, orchid);
+        letter-spacing: 2px;
+        background-size: cover;
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        padding: 1rem 2rem; 
+        text-shadow: 0 0 3rem rgba(black, .4);
+        font-family: 'Roboto Mono';
+    }
+}
+
+.btn-add {
+    border: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    background-color: darkcyan;
+    transition: all .2s;
+    color: white;
+
+    font-family: 'Baloo Chettan 2';
+
+    box-shadow: 0 0 2rem rgba(black , .4);
+
+    &:hover {
+        filter: brightness(80%);
+    }
+
+    &:active {
+        filter: brightness(80%);
+        box-shadow: 0 0 1rem rgba(black , .4);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: 'Baloo Chettan 2', sans-serif;
+}
+
+.main-section {
+  font-size: 2rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.main-section h2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(darkblue), to(orchid));
+  background-image: linear-gradient(to right bottom, darkblue, orchid);
+  letter-spacing: 2px;
+  background-size: cover;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto Mono';
+}
+
+.btn-add {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  background-color: darkcyan;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: white;
+  font-family: 'Baloo Chettan 2';
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+}
+
+.btn-add:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.btn-add:active {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+.btn-add:focus {
+  outline: none;
 }
