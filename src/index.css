@@ -10,6 +10,7 @@ body {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-family: 'Baloo Chettan 2', sans-serif;
+  background-color: rgba(173, 216, 230, 0.2);
 }
 
 .main-section {
@@ -63,4 +64,142 @@ body {
 
 .btn-add:focus {
   outline: none;
+}
+
+.gift-list {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 4rem;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.gift-list__item {
+  background-color: darkcyan;
+}
+
+.gift-form {
+  font-family: 'Roboto Mono';
+  margin: 4rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid darkcyan;
+  border-radius: 1rem;
+}
+
+.gift-form__form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gift-form__form-group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.gift-form__input {
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  border: 2px solid darkcyan;
+  margin-right: -8.75rem;
+  background-color: transparent;
+  font-family: inherit;
+  color: black;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-style: inherit;
+  font-size: 2rem;
+}
+
+.gift-form__input:focus {
+  background-color: orchid;
+  outline: none;
+  color: white;
+}
+
+.gift-form__input::-webkit-input-placeholder {
+  font-family: inherit;
+}
+
+.gift-form__input:-ms-input-placeholder {
+  font-family: inherit;
+}
+
+.gift-form__input::-ms-input-placeholder {
+  font-family: inherit;
+}
+
+.gift-form__input::placeholder {
+  font-family: inherit;
+}
+
+.gift-form__input:focus::-webkit-input-placeholder {
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+
+.gift-form__input:focus:-ms-input-placeholder {
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+
+.gift-form__input:focus::-ms-input-placeholder {
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+
+.gift-form__input:focus::placeholder {
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+
+.gift-form__button-submit, .gift-form__button-delete {
+  font-family: inherit;
+  border: none;
+  background-color: darkcyan;
+  border-radius: 100px;
+  color: white;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  z-index: 10;
+  position: relative;
+  padding: 1rem 1.5rem;
+}
+
+.gift-form__button-submit:hover, .gift-form__button-delete:hover {
+  cursor: pointer;
+  background-color: orchid;
+}
+
+.gift-form__button-submit:focus, .gift-form__button-delete:focus {
+  outline: none;
+}
+
+.gift-form__button-submit:active, .gift-form__button-delete:active {
+  background-color: darkorchid;
 }

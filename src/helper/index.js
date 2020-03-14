@@ -1,0 +1,1 @@
+export const max_number = ar => ar.length > 0 ? Math.max(...ar) : 0;

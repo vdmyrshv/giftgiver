@@ -1,3 +1,11 @@
+// Specify in CSS
+// Use the following CSS rules to specify these families:
+
+// font-family: 'Baloo Chettan 2', cursive;
+// font-family: 'Roboto Mono', monospace;
+
+$color-darkcyan: darkcyan;
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -9,6 +17,8 @@ body {
     box-sizing: inherit;
 
     font-family: 'Baloo Chettan 2', sans-serif;
+
+    background-color: rgba(lightblue, 0.2);
 }
 
 .main-section {
@@ -57,4 +67,115 @@ body {
     &:focus {
         outline: none;
     }
+}
+
+.gift-list {
+    display: grid;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+
+    &__item {
+        background-color: darkcyan;
+    }
+}
+
+.gift-form {
+
+    font-family: 'Roboto Mono';
+    
+    margin: 4rem;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 2px solid darkcyan;
+
+    border-radius: 1rem;
+
+    &__fieldset {
+
+    }
+
+    &__form-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__input{
+        border-radius: 100px;
+        padding: 1rem 2rem;
+        border: 2px solid darkcyan;
+        margin-right: -8.75rem;
+
+        background-color: transparent;
+
+        font-family: inherit;
+
+        color: black;
+
+        
+        transition: all .2s;
+
+        font-style: inherit;
+
+        font-size: 2rem;
+
+        &:focus {
+            background-color: orchid;
+            outline: none;
+            color: white;
+        }
+
+        &::placeholder{
+            font-family: inherit;
+        }
+
+        &:focus::placeholder {
+            color: white;
+            z-index: 10;
+            position: relative;
+        }
+    }
+
+    &__button-submit,
+    &__button-delete {
+        font-family: inherit;
+        border: none;
+        background-color: darkcyan;
+        border-radius: 100px;
+        color: white;
+        transition: all .2s;
+        z-index: 10;
+        position: relative;
+        padding: 1rem 1.5rem;
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: orchid;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            background-color: darkorchid;
+        }
+    }
+
+
+
+
 }
